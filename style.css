@@ -1,0 +1,144 @@
+body {
+  background-image: linear-gradient(135deg, #d14dff 100%, #0019fa 70%);
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.jumbotron {
+  padding: 5rem;
+  background-color: linear-gradient(135deg, #00c8c8 100%, #c20476 70%);
+}
+#About {
+  text-align: center;
+}
+
+#Services {
+  text-align: center;
+}
+
+#Project {
+  text-align: center;
+}
+
+#Portfolio {
+  text-align: center;
+}
+
+#Contact {
+  padding: 5rem;
+  text-align: center;
+}
+
+.glassIco {
+  --width: 100px;
+  width: var(--width);
+  height: var(--width);
+  color: #fff;
+  font-size: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  margin: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glassIco,
+.glassIco * {
+  box-sizing: border-box;
+  transition: 200ms;
+}
+.glassIco:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(0px);
+  transition: 400ms;
+  transform: skewX(45deg) translateX(calc(var(--width) + 50%));
+}
+.glassIco:hover {
+  transform: translateY(-20px);
+}
+.glassIco:hover:before {
+  transform: skewX(45deg) translateX(calc(var(--width) * -1 - 50%));
+}
+.glassIco > * {
+  opacity: 0.8;
+}
+
+/* project */
+.glassIcoProject {
+  --width: 100px;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  margin: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glassIcoProject,
+.glassIcoProject * {
+  box-sizing: border-box;
+  transition: 200ms;
+}
+.glassIcoProject:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(0px);
+  transition: 400ms;
+  transform: skewX(45deg) translateX(calc(var(--width) + 50%));
+}
+.glassIcoProject:hover {
+  transform: translateY(-20px);
+}
+.glassIcoProject:hover:before {
+  transform: skewX(45deg) translateX(calc(var(--width) * -1 - 50%));
+}
+.glassIcoProject > * {
+  opacity: 0.8;
+}
